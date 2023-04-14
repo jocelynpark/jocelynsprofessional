@@ -1,0 +1,232 @@
+body {
+  /* background-color: lightgray; */
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header {
+  /* background-color: darkgray; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.greeting {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 3em;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+p {
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+}
+
+.about-me-text {
+  flex: 2;
+  text-align: left;
+  padding: 1em;
+  line-height: 1.25em;
+}
+
+.big-headshot {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.case-study-block {
+  margin: 0 10%;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar li {
+  margin-left: 40px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.title {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  height: 100%;
+}
+
+.design-project {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  align-items: center;
+}
+
+.proj-title {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+.proj-description {
+  font-size: 1.5em;
+  color: gray;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnails img {
+  margin: 10px;
+}
+
+.main-image {
+  flex: 1;
+  margin: 10px;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.travel-gallery {
+  display: flex;
+  border: 10px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.city-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.city-vertical {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  height: 100%;
+}
+
+.spain {
+  flex: 1;
+}
+
+.city-title {
+  margin: 20px;
+  font-size: larger;
+}
+
+
+@media (max-width: 750px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
