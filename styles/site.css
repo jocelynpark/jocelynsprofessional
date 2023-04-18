@@ -191,6 +191,16 @@ nav {
   color: gray;
 }
 
+
+.proj-hover-text {
+  display: none;
+}
+
+.design-project:hover .proj-hover-text {
+  color: darkgray;
+  display: block;
+}
+
 .gallery {
   display: flex;
   width: 100%;
@@ -370,7 +380,6 @@ nav {
 }
 
 .news-box-small {
-  background-color: lightgreen;
   margin-left: 10px;
   height: 350px;
   width: 400px;
