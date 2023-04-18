@@ -19,8 +19,13 @@
         <a class="title" href="index.html">Jocelyn Park</a>
       </div>
       <div class="column">
-        <ul class="navbar">
-          <li><a href="design.html">Design</a></li>
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="art.html">Art</a></li>
           <li><a href="travel.html">Travel</a></li>
         </ul>
@@ -28,19 +33,21 @@
     </nav>
   </header>
   <div class="travel-gallery">
-    <div class="city-block city-vertical">
+    <a href="barcelona.html" class="city-block city-vertical">
       <img class="spain" src="images/barcelona-thumbnail.JPG" alt="barcelona">
-      <div class="city-title"> Barcelona, Spain </div>
-    </div>
-    <div class="city-block city-vertical">
+      <div class="city-title"> Barcelona, Spain</div>
+    </a>
+    <a href="madrid.html" class="city-block city-vertical">
       <img class="spain" src="images/madrid-thumbnail.JPG" alt="madrid">
-      <div class="city-title"> Madrid, Spain </div>
-    </div>
-    <div class="city-block city-vertical">
-      <img class="spain" src="images/seville-thumbnail.JPG" alt="barcelona">
-      <div class="city-title"> Seville, Spain </div>
-    </div>
+      <div class="city-title"> Madrid, Spain</div>
+    </a>
+    <a href="seville.html" class="city-block city-vertical">
+      <img class="spain" src="images/seville-thumbnail.JPG" alt="seville">
+      <div class="city-title"> Seville, Spain</div>
+    </a>
   </div>
+  <script src="scripts/jquery-3.6.1.js"></script>
+  <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

@@ -16,16 +16,8 @@ a {
   text-decoration: none;
 }
 
-.hamburger-menu {
+.hamburger {
   display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
 }
 
 .greeting {
@@ -88,13 +80,15 @@ img {
 }
 
 nav {
+  /* background-color: green; */
   height: 50px;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 60px;
 }
 
-.navbar {
+.nav-links {
+  /* background-color: lightblue; */
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -104,7 +98,7 @@ nav {
   margin: 0;
 }
 
-.navbar li {
+.nav-links li {
   margin-left: 40px;
   color: black;
   text-decoration: none;
@@ -131,8 +125,11 @@ nav {
 }
 
 .column {
+  /* background-color: aquamarine; */
+  border-radius: 100em;
   flex: 1;
   height: 100%;
+  align-items: center;
 }
 
 .design-project {
@@ -224,9 +221,103 @@ nav {
   font-size: larger;
 }
 
+.hamburger-menu {
+  display: none;
+}
 
-@media (max-width: 750px) {
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slide {
+  flex: 0 0 32%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+}
+
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    align-items: flex-end;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
   .hamburger-menu {
+    /* background-color: beige; */
     display: block;
+    width: 30px;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    /* background-color: green; */
+    opacity: 1;
+  }
+
+  .nav-links li {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.5s;
+    text-align: right;
+    margin-right: 40px;
+    /* background-color: red; */
   }
 }
