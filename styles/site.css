@@ -1,25 +1,34 @@
 body {
   /* background-color: lightgray; */
-  font-family: 'Times New Roman', Times, serif;
   margin-left: 10%;
   margin-right: 10%;
   font-family: Baskerville;
+  background-color: black;
+  color: white;
 }
 
 header {
-  /* background-color: darkgray; */
+  background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 80%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+main {
+  margin-top: 90px;
 }
 
 a {
   text-decoration: none;
   text-transform: none;
-  color: black;
+  color: white;
 }
 
-.hamburger {
+.hamburger-menu {
   display: none;
 }
 
@@ -30,17 +39,14 @@ a {
   padding-bottom: 7em;
   display: flex;
   flex-direction: row;
+  position: sticky;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 #myVideo {
-  width: 100px;
+  width: 100%;
   height: auto;
-}
-
-.greeting video {
-  display: inline-block;
-  flex-basis: 50%;
-  margin-left: auto;
 }
 
 .greeting-text {
@@ -59,7 +65,7 @@ a {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 4em;
   margin-right: 1em;
 }
@@ -117,7 +123,7 @@ nav {
   height: 50px;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .nav-links {
@@ -132,14 +138,12 @@ nav {
 }
 
 .nav-links li {
-  margin-left: 40px;
-  color: black;
   text-decoration: none;
   font-size: 1.5em;
+  margin-left: 40px;
 }
 
 .title {
-  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,8 +162,7 @@ nav {
 }
 
 .column {
-  /* background-color: aquamarine; */
-  border-radius: 100em;
+  /* background-color: gray; */
   flex: 1;
   height: 100%;
   align-items: center;
@@ -271,7 +274,7 @@ nav {
 .line {
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin: 5px;
 }
 
@@ -347,6 +350,7 @@ nav {
 }
 
 .news h1 {
+  width: 100%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 60px;
@@ -403,6 +407,10 @@ nav {
     opacity: 0;
   }
 
+  .nav-active {
+    opacity: 1;
+  }
+
   .hamburger-menu {
     display: block;
     width: 30px;
@@ -412,14 +420,15 @@ nav {
     cursor: pointer;
   }
 
-  .nav-active {
-    opacity: 1;
-  }
-
   .nav-links li {
     opacity: 1;
     transition: opacity 0.5s ease 0.5s;
     text-align: right;
     margin-right: 40px;
   }
+}
+
+.hero-cover {
+  background-color: black;
+  height: 300px;
 }
